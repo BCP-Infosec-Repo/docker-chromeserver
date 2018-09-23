@@ -58,5 +58,4 @@ if __name__ == "__main__":
                         default=sys.platform,
                         help='Specify to download specific OS driver')
     args = parser.parse_args()
-    print(args.platform)
     print(GetDriver().latest(args.dir, args.platform))
